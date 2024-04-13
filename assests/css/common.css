@@ -1,0 +1,190 @@
+/*=================RESET CSS====================*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: "Poppins", sans-serif;
+}
+
+:root{
+--primary : #1D232C;
+--secondary : #E2E1E1;
+--btn : #F0F0F0;
+--card_bg : #F2F4F7;
+--sale : #FF0000;
+}
+/*=================GENERAL STYLE====================*/
+a{
+text-decoration: none;
+}
+ul {
+list-style: none;
+}
+
+/*=================OFFER BAR====================*/
+.offer-bar{
+background: var(--primary);
+width: 100%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10%;
+color:var(--secondary);
+font-size: 1.5vw;
+padding: 5px;
+}
+
+#close-offerBar{
+cursor: pointer;
+}
+
+/*=================WAPPER CONTAINER====================*/
+.wrapper-container{
+padding: 0 15px;
+}
+
+/*=================NAV BAR====================*/
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 5px;
+color: var(--primary);
+position: sticky;
+top: 0px;
+background: #FFF;
+z-index: 10;
+}
+
+nav .logo{
+color: var(--primary);
+}
+
+.menu{
+width: 50%;
+display: block;
+}
+
+.menu ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 10px;
+}
+
+.menu ul li a{
+color: var(--primary);
+}
+
+.menu ul li a:hover{
+text-decoration: underline;
+}
+
+.menu_bar{
+display: none;
+cursor: pointer;
+}
+
+/*=================SIDEBAR====================*/
+.sidebar{
+background: var(--primary);
+width: 50%;
+padding: 20px;
+z-index: 30;
+position: fixed;
+top: 0;
+left: -50%;
+height: 100vh;
+transition: 1s;
+}
+
+.sidebar #close{
+color: var(--secondary);
+text-align: right;
+cursor: pointer;
+}
+
+.sidebar__menu ul li{
+padding: 15px 0;
+}
+
+.sidebar__menu ul li a{
+color: var(--secondary);
+}
+
+/*=================SUBSCRIBE====================*/
+.subscribe{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 5vw;
+}
+
+.subscribe h2{
+font-size: 45px;
+}
+
+.subscribe p{
+font-size: 25px;
+}
+
+.subscribe input{
+width: 78%;
+height: 40px;
+border: 3px solid var(--primary);
+margin: 15px 0;
+}
+
+.subscribe .btn{
+background: var(--primary);
+border: none;
+padding: 10px 15px;
+font-size: 24px;
+color: var(--secondary);
+border-radius: 10px;
+}
+
+/*=================FOOTER====================*/
+.footer{
+margin-top: 5vw;
+background: var(--primary);
+color: var(--secondary);
+padding: 40px 35px;
+}
+
+.footer h2{
+font-size: 40px;
+}
+
+.footer p{
+font-size: 28px;
+}
+
+.footer .social-icons{
+margin: 25px 15px;
+width: 20%;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+.footer .social-icons i{
+font-size: 28px;
+}
+
+/*============RESPONSIVE CODE==============*/
+@media only screen and (max-width: 1000px) {
+.menu{
+display: none;
+}
+.menu_bar{
+display: block;
+}
+}
+
+
