@@ -33,7 +33,7 @@ button.addEventListener('click', function(){
         if(index<0){
             index = imageList.length -1;
         }
-        sliderContainer.style.background = `url('/Imgs/${imageList[index]}.jpg') center/cover no-repeat`
+        sliderContainer.style.background = `url('./Imgs/${imageList[index]}.jpg') center/cover no-repeat`
     }
     else{
         console.log('right')
@@ -41,7 +41,7 @@ button.addEventListener('click', function(){
         if(index==imageList.length){
             index = 0;
         }
-        sliderContainer.style.background = `url('/Imgs/${imageList[index]}.jpg') center/cover no-repeat`;
+        sliderContainer.style.background = `url('./Imgs/${imageList[index]}.jpg') center/cover no-repeat`;
 
     }
 })
