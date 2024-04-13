@@ -34,20 +34,34 @@ console.log(selectedValue)
 for(count =0; count<tagList.length; count++){
 var tag = tagList[count].innerHTML;
 if(tag.toUpperCase().indexOf(selectedValue)<0){
-list.push(event.target.value)
+list.push(event.target.value);
 productList[count].style.display = 'none';
 }
 else{
 var index = list.indexOf(event.target.value);
 list.splice(index, 1);
 productList[count].style.display = 'block';
-console.log(list)
 }
 }
 }
+else{
+for(count =0; count<tagList.length; count++){
+    unChecked(tagList,count)
+}
+
+}
+
 })
 
 })
+
+function unChecked(tagList,count){
+var tag = tagList[count].innerHTML;
+var index = list.indexOf(event.target.value);
+list.splice(index, 1);
+productList[count].style.display = 'block';
+}
+
 
 
 
