@@ -147,6 +147,7 @@ padding: 10px 15px;
 font-size: 24px;
 color: var(--secondary);
 border-radius: 10px;
+cursor: pointer;
 }
 
 /*=================FOOTER====================*/
